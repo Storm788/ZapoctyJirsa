@@ -3,7 +3,7 @@
 
 Jak to spustit cd /workspaces/ZapoctyJirsa python3 barvy.py
 
-### Screenshot jak to vypadalo u mě na internetu
+### Screenshot jak to vypadalo u mě v Codespace
 <img width="1762" height="1366" alt="image" src="https://github.com/user-attachments/assets/3207a008-64bb-4e02-8853-2bcfb58febb3" />
 
 ### Screenshot jak to vypadalo u mě v Powershellu 
