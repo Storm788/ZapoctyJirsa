@@ -1,0 +1,30 @@
+$colors = @(
+    @{ Name = "Black";       Fg = 30 },
+    @{ Name = "DarkBlue";    Fg = 34 },
+    @{ Name = "DarkGreen";   Fg = 32 },
+    @{ Name = "DarkCyan";    Fg = 36 },
+    @{ Name = "DarkRed";     Fg = 31 },
+    @{ Name = "DarkMagenta"; Fg = 35 },
+    @{ Name = "DarkYellow";  Fg = 33 },
+    @{ Name = "Gray";        Fg = 37 },
+    @{ Name = "DarkGray";    Fg = 90 },
+    @{ Name = "Blue";        Fg = 94 },
+    @{ Name = "Green";       Fg = 92 },
+    @{ Name = "Cyan";        Fg = 96 },
+    @{ Name = "Red";         Fg = 91 },
+    @{ Name = "Magenta";     Fg = 95 },
+    @{ Name = "Yellow";      Fg = 93 },
+    @{ Name = "White";       Fg = 97 }
+)
+
+$esc = [char]27
+
+foreach ($c in $colors) {
+    $bg = $c.Fg + 10
+    
+    $col1 = "{0,-15}" -f $c.Name
+    $col2 = "$esc[{0}m{1,-20}$esc[0m" -f $c.Fg, $c.Name
+    $col3 = "$esc[{0}m{1,-20}$esc[0m" -f $bg, $c.Name
+    
+    Write-Host "$col1$col2$col3"
+}
