@@ -1,3 +1,3 @@
 # ZapoctyJirsa
 
-### Každý zápočet má svoje vlastní vlákno
+### Každý zápočet má vlastní vlákno
