@@ -1,4 +1,4 @@
-# ANSI Color Palette Generator
+# Uloha 2
 
 Tento PowerShell skript vykreslí paletu 16 standardních konzolových barev. Na rozdíl od nativních cmdletů PowerShellu řešení využívá nízkoúrovňové **ANSI escape sekvence**.
 
@@ -7,7 +7,7 @@ Skript demonstruje:
 * Matematický výpočet barev pozadí z barev popředí (kód pozadí je vždy kód popředí + 10).
 * **Dynamický kontrast textu:** Algoritmus automaticky detekuje světlé/tmavé pozadí ve třetím sloupci a podle toho volí černou nebo zářivě bílou barvu písma pro zajištění maximální čitelnosti.
 
-## Zdrojový kód (`Show-AnsiPalette.ps1`)
+## Zdrojový kód
 
 ```powershell
 <#
