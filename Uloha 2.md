@@ -37,7 +37,7 @@ $colors = @(
 # Escape znak (ASCII 27) pro inicializaci ANSI sekvence
 $esc = [char]27
 
-foreach ($c in$colors) {
+foreach ($c in$ colors) {
     # Výpočet barvy pozadí (+10 dle ANSI standardu)
     $bg =$c.Fg + 10
     
